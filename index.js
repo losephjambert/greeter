@@ -11,5 +11,5 @@ const PORT = process.env.PORT || 4000
 console.log('Port ', PORT)
 
 server.listen(PORT, () => {
-  console.log('\n Server running on port 4000 \n');
+  console.log(`Server running on port ${PORT}`);
 });
