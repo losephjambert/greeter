@@ -1,9 +1,11 @@
+require('dotenv').config()
+
 const express = require('express');
 
 const server = express(); // creating an instance of an express server
 
 server.get('/', (req, res) => {
-  res.status(200).json({ hello: 'Web 23' });
+  res.status(200).json({ hello: process.env.MSG });
 });
 
 const PORT = process.env.PORT || 4000
